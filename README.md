@@ -1,4 +1,4 @@
-<img width="955" alt="Screenshot 2024-11-12 235323" src="https://github.com/user-attachments/assets/c35fa27f-fca1-49eb-abcd-589151ed0434"># Fruits-and-Vegetables-recognition
+# Fruits-and-Vegetables-recognition
 An AI-based image classification system that recognizes various fruits and vegetables using a Convolutional Neural Network (CNN). This project leverages deep learning to make accurate predictions on 20+ types of fruits and vegetables.
 
 # Demo
