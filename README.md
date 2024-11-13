@@ -6,71 +6,93 @@ Upload an image of a fruit or vegetable, and the model will predict the type ins
 
 # Features
 -Real-Time Prediction: Upload an image to get an instant prediction of the fruit or vegetable type.
+
 -Deep Learning Model: A CNN model, trained on a curated dataset of fruits and vegetables, ensures high accuracy.
+
 -Extensive Dataset: Includes over 10 categories of fruits and 10 categories of vegetables.
+
 -Interactive UI: Built with Streamlit for an easy-to-use interface.
 
 # Project Structure
 -main.py: Main file for running the Streamlit application.
+
 -trained_model.h5: Pre-trained CNN model file.
+
 -labels.txt: Text file with labels for each fruit and vegetable type.
 
 # Sample Images
 Here are some sample images from the dataset: 
-1.Apple
-2.Banana
-3.Grapes
-4.Mango
-5.Orange
-6.Carrot
-7.Tomato
-8.Potato
-9.Cucumber
-10.Capsicum
+
+(Apple, Banana, Grapes, Mango, Orange, Carrot, Tomato, Potato, Cucumber, Capsicum)
 
 # How It Works
 The dataset contains:
+
 -Training Set: 100 images per category.
+
 -Testing Set: 10 images per category.
+
 -Validation Set: 10 images per category.
 
 # Use Cases
 -Smart Grocery Systems: Automate produce identification for checkout.
+
 -Health Apps: Recognize food items to assist in diet tracking.
+
 -Retail: Automate produce recognition for checkouts in grocery stores.
+
 -Education: Useful for learning about CNNs and image classification.
 
 # Technologies Used
 -TensorFlow: For building and training the CNN model.
+
 -Streamlit: For creating the web-based user interface.
+
 -NumPy: For handling image data as arrays.
 
 # Challenges Faced and Solutions
 1. Data Collection and Preparation
+   
    -Challenge: Finding a diverse dataset with a wide variety of fruits and vegetables, each with enough images for training, validation, and testing.
-   -Solution: Curated a dataset with 100+ images per category and split it into train, test, and validation sets. Applied data augmentation techniques (e.g., rotation, 
-    flipping) to increase dataset diversity.
+   
+   -Solution: Curated a dataset with 100+ images per category and split it into train, test, and validation sets. Applied data augmentation techniques
+   
+   (e.g., rotation, flipping) to increase dataset diversity.
 
-2. Handling Model Overfitting
+3. Handling Model Overfitting
+   
    -Challenge: The model initially showed signs of overfitting, performing well on the training data but poorly on unseen images.
+   
    -Solution: Implemented regularization techniques such as dropout layers and used data augmentation. Also, fine-tuned hyperparameters to achieve a balanced performance.
    
-4. Optimizing Training Time
+5. Optimizing Training Time
+   
     -Challenge: Training a CNN on a large dataset with limited computational resources resulted in long training times.
+   
     -Solution: Optimized the model’s architecture to reduce complexity without losing accuracy. Used transfer learning with a pre-trained model as the base, reducing both 
-       the training time and resource requirements.
 
-5. Image Size and Quality Standardization
+     the training time and resource requirements.
+
+7. Image Size and Quality Standardization
+   
    -Challenge: Images varied in resolution, causing inconsistencies in model input.
+   
    -Solution: Resized all images to a standard size (64x64 pixels) to maintain consistency, balancing between image quality and processing speed.
 
-6. Ensuring High Prediction Accuracy
+9. Ensuring High Prediction Accuracy
+    
    -Challenge: Some fruit and vegetable categories looked similar (e.g., different types of peppers), leading to misclassification.
-   -Solution: Improved data quality by refining the dataset with high-quality images and trained the model longer, monitoring both training and validation accuracy.               Additionally, tweaked the CNN architecture to enhance accuracy on complex or similar-looking items.
+   
+   -Solution: Improved data quality by refining the dataset with high-quality images and trained the model longer, monitoring both training and validation accuracy.
 
-7. Streamlit Integration for User Interface
+    Additionally, tweaked the CNN architecture to enhance accuracy on complex or similar-looking items.
+
+11. Streamlit Integration for User Interface
+    
     -Challenge: Integrating the trained model with Streamlit and ensuring smooth functionality for uploading and predicting images.
+    
     -Solution: Developed a streamlined workflow that allows users to upload images and instantly get predictions. Addressed issues with file handling and ensured model 
+
      compatibility with Streamlit.
 
 
