@@ -1,5 +1,5 @@
 # Fruits-and-Vegetables-recognition
-An Deep learning based image classification system that recognizes various fruits and vegetables using a Convolutional Neural Network (CNN). This project leverages deep learning to make accurate predictions on 20+ types of fruits and vegetables.
+
 
 # Demo
 Upload an image of a fruit or vegetable, and the model will predict the type instantly.
